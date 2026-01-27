@@ -1,0 +1,8 @@
+
+{
+  "name": "NEOM Distribution Hub",
+  "description": "A comprehensive distribution platform for Ontex hygiene and medical products in Nepal, featuring product catalogs, branch locations, and corporate announcements.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
