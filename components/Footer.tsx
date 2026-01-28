@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             <p className="text-blue-100/70 max-w-sm leading-relaxed text-sm md:text-lg font-medium">
               Official Ontex distributor | Trusted globally in 110+ countries | Hygiene expert
             </p>
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 pt-2 justify-center md:justify-start">
               {/* Facebook */}
               <a href="https://facebook.com/neomnepal" target="_blank" rel="noreferrer" className="size-11 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#0d7ff2] hover:scale-110 transition-all border border-white/5 group">
                 <svg className="size-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -31,9 +31,9 @@ const Footer: React.FC = () => {
                   <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62.02 5.24-.02 7.86-.03 1.34-.36 2.71-1.05 3.89-.7 1.22-1.78 2.22-3.07 2.78-1.21.55-2.58.74-3.89.54-1.3-.2-2.55-.83-3.53-1.73-.99-.9-1.68-2.11-1.95-3.4-.28-1.3-.12-2.7.46-3.89.57-1.2 1.58-2.2 2.77-2.81 1.2-.62 2.59-.83 3.92-.61 1.33.22 2.56.88 3.5 1.83.02-1.01.03-2.01.03-3.02-.95-.62-2.02-1-3.14-1.12-1.24-.13-2.52.05-3.69.54-1.22.51-2.27 1.4-2.98 2.53-.7 1.12-1.05 2.45-1.03 3.77.01 1.34.38 2.68 1.09 3.82.72 1.16 1.81 2.11 3.06 2.66 1.25.55 2.65.7 4 .43 1.35-.27 2.59-.97 3.52-2 1.05-1.18 1.59-2.73 1.62-4.29.02-3.48-.01-6.96-.01-10.44z"/>
                 </svg>
               </a>
-              {/* LinkedIn */}
-              <a href="https://linkedin.com/company/neomnepal" target="_blank" rel="noreferrer" className="size-11 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#0077b5] hover:scale-110 transition-all border border-white/5 group">
-                <svg className="size-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              {/* Instagram */}
+              <a href="https://instagram.com/neomnepal" target="_blank" rel="noreferrer" className="size-11 rounded-xl bg-white/5 flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:scale-110 transition-all border border-white/5 group">
+                <svg className="size-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </a>
             </div>
           </div>
@@ -74,9 +74,9 @@ const Footer: React.FC = () => {
               <p className="flex gap-4"><span className="material-symbols-outlined text-[#0d7ff2]">location_on</span> Maharajgunj-3, Kathmandu, Nepal</p>
               <p className="flex gap-4"><span className="material-symbols-outlined text-[#0d7ff2]">mail</span> info@neom.com.np</p>
               <p className="flex gap-4"><span className="material-symbols-outlined text-[#0d7ff2]">call</span> +977-9851476666</p>
-              <div className="flex gap-3 pt-2">
-                <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-[10px] font-black">OPEN NOW</span>
-                <span className="text-[11px] font-medium opacity-50">Closing at 6:00 PM</span>
+              <div className="flex gap-3 pt-2 justify-center md:justify-start">
+                <span className="hidden md:inline bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-[10px] font-black">OPEN NOW</span>
+                <span className="hidden md:inline text-[11px] font-medium opacity-50">Closing at 6:00 PM</span>
               </div>
             </div>
           </div>
