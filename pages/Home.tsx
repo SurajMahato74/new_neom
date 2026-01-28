@@ -5,32 +5,32 @@ const tiktokVideos = [
   {
     id: '1',
     url: 'https://www.tiktok.com/@tradewithneom/video/7589672148684262677',
-    thumbnail: '/img/thumb/ta.png',
+    thumbnail: 'img/thumb/ta.png',
     title: 'Product Showcase'
   },
   {
     id: '2', 
     url: 'https://www.tiktok.com/@tradewithneom/video/7599903293044821269',
-    thumbnail: '/img/thumb/tb.png',
+    thumbnail: 'img/thumb/tb.png',
     title: 'Customer Review'
   },
   {
     id: '3',
     url: 'https://www.tiktok.com/@tradewithneom/video/7590774005053803796', 
-    thumbnail: '/img/thumb/tc.png',
+    thumbnail: 'img/thumb/tc.png',
     title: 'Product Demo'
   },
   {
     id: '4',
     url: 'https://www.tiktok.com/@tradewithneom/video/7599268327420300565',
-    thumbnail: '/img/thumb/td.png',
+    thumbnail: 'img/thumb/td.png',
     title: 'Behind the Scenes'
   }
 ];
 
 const slides = [
   {
-    image: "/img/car1.png",
+    image: "img/car1.png",
     title: "Authorized Brand Seller and Distributor of Ontex Products",
     subtitle: "We sell premium Baby Charm and Helen Harper diapers - trusted hygiene solutions for families across Nepal."
   }
@@ -210,10 +210,10 @@ const Home: React.FC<HomeProps> = ({ onOrderClick }) => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { id: 'helen-harper-adult-care', name: "Helen Harper Adult Care", desc: "Premium comfort for active lifestyles.", image: "/img/products/helen_5.jpeg" },
-                { id: 'baby-charm-newborn', name: "Baby Charm Newborn", desc: "Ultra-soft protection for newborns.", image: "/img/products/babycharm_1_newborn.jpeg" },
-                { id: 'baby-charm-maxi', name: "Baby Charm Maxi", desc: "Perfect fit for growing babies.", image: "/img/products/babycharm_4_maxi.jpeg" },
-                { id: 'helen-harper-premium', name: "Helen Harper Premium", desc: "Dignity and comfort for adults.", image: "/img/products/helen_harper_4.jpeg" }
+                { id: 'helen-harper-adult-care', name: "Helen Harper Adult Care", desc: "Premium comfort for active lifestyles.", image: "img/products/helen_5.jpeg" },
+                { id: 'baby-charm-newborn', name: "Baby Charm Newborn", desc: "Ultra-soft protection for newborns.", image: "img/products/babycharm_1_newborn.jpeg" },
+                { id: 'baby-charm-maxi', name: "Baby Charm Maxi", desc: "Perfect fit for growing babies.", image: "img/products/babycharm_4_maxi.jpeg" },
+                { id: 'helen-harper-premium', name: "Helen Harper Premium", desc: "Dignity and comfort for adults.", image: "img/products/helen_harper_4.jpeg" }
               ].map((product, i) => (
                 <Link key={i} to={`/product/${product.id}`} className="bg-[#f5f7f8] p-6 rounded-2xl border border-gray-100 space-y-4 hover:shadow-lg transition-all cursor-pointer group block">
                   <div className="w-full h-40 bg-gray-200 rounded-xl bg-cover bg-center group-hover:scale-105 transition-transform" style={{ backgroundImage: `url('${product.image}')` }}></div>
