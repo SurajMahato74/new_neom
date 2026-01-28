@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ onOrderClick }) => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
           <img 
-            src="img/NEOMLOGO.png" 
+            src="/new_neom/img/NEOMLOGO.png" 
             alt="NEOM Logo" 
             className="h-14 w-auto transform group-hover:scale-110 transition-transform"
           />
@@ -90,7 +90,7 @@ const Header: React.FC<HeaderProps> = ({ onOrderClick }) => {
             className="hidden sm:flex items-center justify-center w-10 h-10 bg-[#ff6801] rounded-full hover:scale-110 transition-all shadow-md"
             title="Visit our Daraz store"
           >
-            <img src="img/daraz.png" alt="Daraz" className="w-10 h-10 object-contain" />
+            <img src="/new_neom/img/daraz.png" alt="Daraz" className="w-10 h-10 object-contain" />
           </a>
           
           <button 
@@ -145,7 +145,7 @@ const Header: React.FC<HeaderProps> = ({ onOrderClick }) => {
                 rel="noopener noreferrer"
                 className="w-full bg-[#ff6801] text-white p-4 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2"
               >
-                <img src="img/daraz.png" alt="Daraz" className="w-5 h-5 object-contain" />
+                <img src="/new_neom/img/daraz.png" alt="Daraz" className="w-5 h-5 object-contain" />
                 Visit Daraz Store
               </a>
             </div>

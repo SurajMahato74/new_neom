@@ -10,7 +10,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,999',
     rating: 4.8,
     reviews: 124,
-    image: 'img/products/helen_5.jpeg'
+    image: '/new_neom/img/products/helen_5.jpeg'
   },
   {
     id: 'helen-harper-premium',
@@ -20,7 +20,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,699',
     rating: 4.9,
     reviews: 89,
-    image: 'img/products/helen_harper_4.jpeg'
+    image: '/new_neom/img/products/helen_harper_4.jpeg'
   },
   {
     id: 'baby-charm-newborn',
@@ -30,7 +30,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,039',
     rating: 5.0,
     reviews: 156,
-    image: 'img/products/babycharm_1_newborn.jpeg'
+    image: '/new_neom/img/products/babycharm_1_newborn.jpeg'
   },
   {
     id: 'baby-charm-maxi',
@@ -40,7 +40,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,219',
     rating: 4.7,
     reviews: 98,
-    image: 'img/products/babycharm_4_maxi.jpeg'
+    image: '/new_neom/img/products/babycharm_4_maxi.jpeg'
   },
   {
     id: 'baby-charm-junior',
@@ -50,7 +50,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,399',
     rating: 4.6,
     reviews: 67,
-    image: 'img/products/babycharm_5_junior.jpeg'
+    image: '/new_neom/img/products/babycharm_5_junior.jpeg'
   },
   {
     id: 'baby-charm-xl',
@@ -60,7 +60,7 @@ const allProducts: Product[] = [
     price: 'Rs. 2,579',
     rating: 4.5,
     reviews: 45,
-    image: 'img/products/babycharm_6_xl.jpeg'
+    image: '/new_neom/img/products/babycharm_6_xl.jpeg'
   }
 ];
 

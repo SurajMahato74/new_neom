@@ -16,7 +16,7 @@ const ProductDetail: React.FC = () => {
     price: 'Rs. 2,699',
     rating: 4.9,
     reviews: 89,
-    image: 'img/products/helen_harper_4.jpeg'
+    image: '/new_neom/img/products/helen_harper_4.jpeg'
   };
 
   return (
@@ -30,7 +30,7 @@ const ProductDetail: React.FC = () => {
         <div className="space-y-4">
           <div className="aspect-square bg-white border border-gray-100 rounded-2xl p-10 relative group overflow-hidden">
             <img 
-              src="img/products/helen_harper_4.jpeg" 
+              src="/new_neom/img/products/helen_harper_4.jpeg" 
               alt="Helen Harper Premium Diapers" 
               className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
             />
@@ -38,13 +38,13 @@ const ProductDetail: React.FC = () => {
           </div>
           <div className="grid grid-cols-4 gap-4">
             <div className="aspect-square bg-white border border-gray-100 rounded-xl overflow-hidden cursor-pointer hover:border-[#0d7ff2] transition-colors p-2">
-              <img src="img/products/helen_5.jpeg" className="w-full h-full object-cover rounded-lg" alt="Helen Harper" />
+              <img src="/new_neom/img/products/helen_5.jpeg" className="w-full h-full object-cover rounded-lg" alt="Helen Harper" />
             </div>
             <div className="aspect-square bg-white border border-gray-100 rounded-xl overflow-hidden cursor-pointer hover:border-[#0d7ff2] transition-colors p-2">
-              <img src="img/products/babycharm_1_newborn.jpeg" className="w-full h-full object-cover rounded-lg" alt="Baby Charm Newborn" />
+              <img src="/new_neom/img/products/babycharm_1_newborn.jpeg" className="w-full h-full object-cover rounded-lg" alt="Baby Charm Newborn" />
             </div>
             <div className="aspect-square bg-white border border-gray-100 rounded-xl overflow-hidden cursor-pointer hover:border-[#0d7ff2] transition-colors p-2">
-              <img src="img/products/babycharm_4_maxi.jpeg" className="w-full h-full object-cover rounded-lg" alt="Baby Charm Maxi" />
+              <img src="/new_neom/img/products/babycharm_4_maxi.jpeg" className="w-full h-full object-cover rounded-lg" alt="Baby Charm Maxi" />
             </div>
             <div className="aspect-square bg-gray-50 flex items-center justify-center rounded-xl cursor-pointer">
               <span className="material-symbols-outlined text-3xl text-gray-300">play_circle</span>
