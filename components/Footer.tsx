@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-8">
             <Link to="/" className="flex items-center gap-3">
               <img 
-                src="/static/img/neom_logo.png" 
+                src="/img/neom_logo.png" 
                 alt="NEOM Logo" 
                 className="h-8 md:h-10 w-auto"
               />
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
                 className="group flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-[#ff6801] hover:border-transparent transition-all shadow-xl shadow-black/10"
               >
                 <div className="size-12 bg-[#ff6801] rounded-xl flex items-center justify-center p-2 flex-shrink-0">
-                  <img src="/static/img/daraz.png" alt="Daraz" className="w-full h-full object-contain" />
+                  <img src="/img/daraz.png" alt="Daraz" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Buy Online</p>

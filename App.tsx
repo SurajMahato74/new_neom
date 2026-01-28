@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/new_neom">
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Header onOrderClick={() => setIsOrderModalOpen(true)} />
