@@ -50,12 +50,37 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ onOrderClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [preloadedIframes, setPreloadedIframes] = useState<{[key: string]: boolean}>({});
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
+  }, []);
+
+  // Preload TikTok iframes in the background
+  useEffect(() => {
+    const preloadTimer = setTimeout(() => {
+      tiktokVideos.forEach(video => {
+        const videoId = extractVideoId(video.url);
+        if (videoId && !preloadedIframes[videoId]) {
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://www.tiktok.com/embed/v2/${videoId}`;
+          iframe.style.display = 'none';
+          iframe.style.position = 'absolute';
+          iframe.style.top = '-9999px';
+          document.body.appendChild(iframe);
+          
+          iframe.onload = () => {
+            setPreloadedIframes(prev => ({ ...prev, [videoId]: true }));
+            document.body.removeChild(iframe);
+          };
+        }
+      });
+    }, 2000); // Start preloading after 2 seconds
+
+    return () => clearTimeout(preloadTimer);
   }, []);
 
   const extractVideoId = (url: string) => {
@@ -187,11 +212,12 @@ const Home: React.FC<HomeProps> = ({ onOrderClick }) => {
               <span className="material-symbols-outlined text-lg">close</span>
             </button>
             <iframe
-              src={`https://www.tiktok.com/embed/v2/${extractVideoId(selectedVideo)}`}
+              key={selectedVideo}
+              src={`https://www.tiktok.com/embed/v2/${extractVideoId(selectedVideo)}?autoplay=1`}
               width="100%"
               height="100%"
               frameBorder="0"
-              allow="encrypted-media"
+              allow="encrypted-media; autoplay"
               allowFullScreen
               className="w-full h-full"
               style={{ transform: 'scale(0.85)', transformOrigin: 'top center' }}
