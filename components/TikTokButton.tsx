@@ -2,7 +2,7 @@ import React from 'react';
 
 const TikTokButton: React.FC = () => {
   const handleTikTokClick = () => {
-    const tiktokUrl = 'https://www.tiktok.com/@tradewithneom?_r=1&_t=ZS-93JVA1Onvt7';
+    const tiktokUrl = 'https://www.tiktok.com/@tradewithneom?_r=1&_t=ZS-93RZyGvP1S0';
     
     // Try to open TikTok app first, fallback to web
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
