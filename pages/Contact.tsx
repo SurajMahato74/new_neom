@@ -142,7 +142,7 @@ const Contact: React.FC = () => {
         {/* Right Side: Interactive Map Placeholder */}
         <div className="lg:col-span-7 bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden shadow-sm relative group min-h-[400px]">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4234567890123!2d85.3240!3d27.7172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196de8fb0c63%3A0x1234567890abcdef!2sNEOM%20Office!5e0!3m2!1sen!2snp!4v1234567890123!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.4313875644484!2d85.318748!3d27.642121999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb17005e1b894b%3A0x505a532702a5ca51!2sNEOM%20World%20Trade%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1769588783782!5m2!1sen!2snp"
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
