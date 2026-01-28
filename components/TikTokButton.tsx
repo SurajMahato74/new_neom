@@ -2,23 +2,10 @@ import React from 'react';
 
 const TikTokButton: React.FC = () => {
   const handleTikTokClick = () => {
-    const tiktokUrl = 'https://www.tiktok.com/@tradewithneom?_r=1&_t=ZS-93RZyGvP1S0';
+    const tiktokUrl = 'https://www.tiktok.com/@tradewithneom?_r=1&_t=ZS-93Ra9Te5EBj';
     
-    // Try to open TikTok app first, fallback to web
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    if (isMobile) {
-      // Try to open in TikTok app
-      window.location.href = `tiktok://user?username=tradewithneom`;
-      
-      // Fallback to web after a short delay
-      setTimeout(() => {
-        window.open(tiktokUrl, '_blank');
-      }, 1000);
-    } else {
-      // Desktop - open in new tab
-      window.open(tiktokUrl, '_blank');
-    }
+    // Direct link approach - no app detection to avoid popups
+    window.open(tiktokUrl, '_blank');
   };
 
   return (
