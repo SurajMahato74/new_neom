@@ -166,7 +166,7 @@ const OrderModal: React.FC<OrderModalProps> = ({ isOpen, onClose, preSelectedPro
               </div>
 
               {/* Product Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-64 sm:max-h-72 overflow-y-auto pr-2">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-64 sm:max-h-72 overflow-y-auto pr-2">
                 {filteredProducts.map(product => (
                   <div
                     key={product.id}

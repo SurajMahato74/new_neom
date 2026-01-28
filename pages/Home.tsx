@@ -120,6 +120,15 @@ const Home: React.FC<HomeProps> = ({ onOrderClick }) => {
                   >
                     Shop Now
                   </button>
+                  <a 
+                    href="https://www.daraz.com.np/shop/caj5pzzo/?spm=a2a0e.pdp_revamp.seller.1.140861f9NxHwT3&itemId=414763663&channelSource=pdp" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-[#ff6801] text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all flex items-center gap-2 shadow-lg"
+                  >
+                    <img src="/new_neom/img/daraz.png" alt="Daraz" className="w-6 h-6 object-contain" />
+                    Buy on Daraz
+                  </a>
                 </div>
               </div>
             </div>
