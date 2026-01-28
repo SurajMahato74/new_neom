@@ -20,12 +20,12 @@ const ProductDetail: React.FC = () => {
   };
 
   return (
-    <div className="max-w-[1280px] mx-auto px-10 py-10">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 py-6 lg:py-10">
       <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
         <span className="material-symbols-outlined text-base">home</span> Home / Products / Baby Care / Helen Helper Diapers
       </nav>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         {/* Gallery */}
         <div className="space-y-4">
           <div className="aspect-square bg-white border border-gray-100 rounded-2xl p-10 relative group overflow-hidden">
@@ -97,7 +97,7 @@ const ProductDetail: React.FC = () => {
             </div>
           </div>
 
-          <div className="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm space-y-6">
+          <div className="p-4 sm:p-8 bg-white border border-gray-100 rounded-2xl shadow-sm space-y-6">
             <div className="flex items-end justify-between">
               <div>
                 <p className="text-sm text-gray-400 line-through">Rs. 2,999</p>
@@ -140,12 +140,12 @@ const ProductDetail: React.FC = () => {
 
       {/* Tabs */}
       <div className="mt-20">
-        <div className="flex border-b border-gray-200">
+        <div className="flex overflow-x-auto scrollbar-hide border-b border-gray-200">
           {['Description', 'Specifications', 'Usage Guide'].map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-8 py-4 text-sm font-bold transition-all border-b-2 ${
+              className={`flex-shrink-0 px-4 sm:px-8 py-4 text-xs sm:text-sm font-bold transition-all border-b-2 whitespace-nowrap ${
                 activeTab === tab ? 'border-[#0d7ff2] text-[#0d7ff2]' : 'border-transparent text-gray-400'
               }`}
             >
@@ -153,8 +153,8 @@ const ProductDetail: React.FC = () => {
             </button>
           ))}
         </div>
-        <div className="py-10 text-gray-600 leading-relaxed max-w-4xl">
-          <p className="text-lg">
+        <div className="py-6 sm:py-10 text-gray-600 leading-relaxed max-w-4xl">
+          <p className="text-base sm:text-lg">
             Helen Helper Premium Baby Diapers are engineered with advanced Ontex technology to provide superior comfort and protection for your little ones. Featuring high-grade Japanese Sandia Super Absorbent Polymer (SAP) and premium USA Fluff Pulp.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
